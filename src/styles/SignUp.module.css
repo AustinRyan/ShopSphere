@@ -1,0 +1,153 @@
+.container {
+  min-height: 100vh;
+  background: #fafafa;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imageSection {
+  position: relative;
+  min-height: 600px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.formSection {
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.formContainer h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #DB4444;
+}
+
+.createAccount {
+  width: 100%;
+  padding: 1rem;
+  background: #DB4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.createAccount:hover {
+  background: #c53030;
+}
+
+.googleSignUp {
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.googleSignUp:hover {
+  background: #f5f5f5;
+}
+
+.googleIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.login {
+  text-align: center;
+  color: #666;
+}
+
+.login a {
+  color: #DB4444;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .imageSection {
+    display: none;
+  }
+
+  .formSection {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .formContainer h1 {
+    font-size: 1.5rem;
+  }
+}

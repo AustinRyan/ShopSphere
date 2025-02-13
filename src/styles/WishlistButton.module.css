@@ -1,0 +1,26 @@
+.wishlistButton {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #666;
+}
+
+.wishlistButton:hover {
+  background: #f8e0e0;
+  color: #DB4444;
+}
+
+.wishlistButton.active {
+  color: #DB4444;
+}
+
+.wishlistButton.active:hover {
+  background: #f8e0e0;
+}

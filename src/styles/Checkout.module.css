@@ -1,0 +1,242 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #000;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #DB4444;
+}
+
+.checkoutForm {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+}
+
+.billingDetails,
+.orderSummary {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.billingDetails h2,
+.orderSummary h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #DB4444;
+}
+
+.saveInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.saveInfo input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.saveInfo label {
+  cursor: pointer;
+}
+
+.products {
+  margin-bottom: 2rem;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.product:last-child {
+  border-bottom: none;
+}
+
+.product img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.productInfo {
+  flex-grow: 1;
+}
+
+.productInfo h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.productInfo p {
+  margin: 0;
+  color: #666;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.colorDot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.coupon {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.coupon input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.coupon button {
+  padding: 0.75rem 1.5rem;
+  background: #DB4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.coupon button:hover {
+  background: #c53030;
+}
+
+.totals {
+  margin-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.row.total {
+  border-bottom: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.paymentMethods {
+  margin-bottom: 2rem;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.method input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.method label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.paymentIcons img {
+  height: 24px;
+  width: auto;
+}
+
+.placeOrder {
+  width: 100%;
+  padding: 1rem;
+  background: #DB4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.placeOrder:hover {
+  background: #c53030;
+}
+
+@media (max-width: 1024px) {
+  .checkoutForm {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .coupon {
+    flex-direction: column;
+  }
+
+  .coupon button {
+    width: 100%;
+  }
+}

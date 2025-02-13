@@ -1,0 +1,205 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 0 20px;
+  margin-top: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.column h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.column p {
+  color: #d9d9d9;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links a {
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: #ffffff;
+}
+
+.nonClickableLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nonClickableLinks span {
+  color: #d9d9d9;
+  font-size: 14px;
+  cursor: default;
+}
+
+.emailInput {
+  display: flex;
+  margin-top: 8px;
+}
+
+.emailInput input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px 0 0 4px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.emailInput input::placeholder {
+  color: #666;
+}
+
+.emailInput button {
+  padding: 12px 16px;
+  background-color: #db4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.emailInput button:hover {
+  background-color: #c53030;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.socialIcons a {
+  color: #d9d9d9;
+  transition: color 0.2s;
+}
+
+.socialIcons a:hover {
+  color: #ffffff;
+}
+
+.appDownload {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.qrCode {
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 4px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appStores {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.storeButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: default;
+}
+
+.storeText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.storeText span:first-child {
+  font-size: 10px;
+  color: #d9d9d9;
+}
+
+.storeText span:last-child {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bottomBar {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.bottomBar p {
+  color: #d9d9d9;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .column {
+    text-align: center;
+  }
+
+  .appDownload {
+    justify-content: center;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+}
